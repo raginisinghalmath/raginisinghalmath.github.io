@@ -93,12 +93,15 @@ background-color:#FAFABF;
 }
 
 </style>
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
 </head>
 <body>
 
@@ -145,7 +148,7 @@ else obj.style.display = "block";
                 <div id="Pluri-potential" style="display:none;"> 
 <P></P>
 
-<FONT  color="dimgrey">We study the properties of the $\mathrm{dd}^\Phi$-operator on $8$-dimensional Spin(7)-manifolds with torsion-free Spin(7)-structures $\Phi$. These operators were first introduced by Harvey and Lawson. We prove a Hodge decomposition theorem for the $\mathrm{dd}^\Phi$-operator and obtain an analogue of the $\partial \bar{\partial}$-lemma in Kähler geometry. Using this, we define Bott--Chern-type cohomologies for Spin(7)-manifolds. We relate the Bott-Chern-type cohomology spaces to the moduli space of torsion-free Spin(7)-structures and calibrated geometry of Spin(7)-manifolds. These relations naturally give rise to the notion of Cayley-positive cones. In the course of proving the results, we state and prove various identities for the exterior derivative and its decompositions into irreducible Spin(7)-representations as well as identities for second order derivatives and Laplacians. The identities we prove are for any Spin(7)-structures and the specialized torsion-free ones are Spin(7)-analogoues of Kähler identities and Bryant--Harvey's identities in the $\mathrm{G}_2$-case by Bryant and are results of independent interest.</FONT>
+<FONT  color="dimgrey">We study the properties of the $\mathrm{dd}^\Phi$-operator on $8$-dimensional Spin(7)-manifolds with torsion-free Spin(7)-structures $\Phi$. These operators were first introduced in our previous work on nearly parallel G$_2$-structures and their potential deformations. Our main result is a $\mathrm{dd}^\Phi$-Lemma for torsion-free Spin(7)-structures. As an application, we define a new Bott-Chern type cohomology theory, which we compare with Dolbeault and Bott-Chern cohomologies. We also show that a formal deformation of a torsion-free Spin(7)-structure is obstructed by a class in the defined Bott-Chern cohomology.
 
 <P></P>
     </div>
@@ -158,7 +161,7 @@ else obj.style.display = "block";
                 <div id="RHF-solutions" style="display:none;"> 
 <P></P>
 
-<FONT  color="dimgrey">We find explicit solutions and singularities of the Ricci-harmonic flow of G<sub>2</sub>-structures, the Ricci-like flows of G<sub>2</sub>-structures studied by Gianniotis-Zacharopoulos in arXiv:2505.06872 (J. Geom. Anal. 36.2 (2026)) and of the negative gradient flow of an energy functional of G<sub>2</sub>-structures, on 7-dimensional contact Calabi-Yau manifolds and the 7-dimensional Heisenberg group. We prove that the natural co-closed G<sub>2</sub>-structure on a contact Calabi-Yau manifold as the initial condition leads to an ancient solution of the Ricci-harmonic flow with a finite time Type I singularity, and it gives an immortal solution to the Ricci-like flows with an infinite time singularity which are Type III if the transversal Calabi-Yau distribution is flat, and Type IIb otherwise. The same ansatz gives ancient solution to the negative gradient flow of G<sub>2</sub>-structures. These are the first examples of Type I singularities of the Ricci-harmonic flow and Type IIb and Type III singularities of the Ricci-like flows. We also obtain similar solutions for all the three flows on the 7-dimensional Heisenberg group.</FONT>
+<FONT  color="dimgrey">We find explicit solutions and singularities of the Ricci-harmonic flow of G<sub>2</sub>-structures, the Ricci-like flows of G<sub>2</sub>-structures studied by Gianniotis-Zachos, and the pluriclosed flow on nearly parallel G<sub>2</sub> structures. For the Ricci-harmonic flow, we show that the Berard-Bergery solution on $\mathbb{R}^7$ is a backward self-similar solution and has a type I blowup singularity. We show that any finite time singularity in the Ricci-harmonic flow of G<sub>2</sub>-structures with nonnegative Ricci curvature must be of type I. We also exhibit a type II blowup singularity for the Ricci-like flow. Finally, we show that the pluriclosed flow on the homogeneous nearly parallel G<sub>2</sub> structure (the Aloff-Wallach space $N_{k,l}$) exists for all time and converges to a nearly parallel G<sub>2</sub> structure.
 
 <P></P>
     </div>
@@ -173,62 +176,60 @@ else obj.style.display = "block";
          <p align="justify">
             <ul>
                 <li> Examples of real stable bundles on K3 surfaces 
- (with <a href="https://sites.google.com/view/dinofesti/" target="_blank">Dino Festi</a>,  <a href="https://danielplatt.github.io/" target="_blank">Daniel Platt</a>, <a href="https://www.bimsa.cn/detail/YuujiTanaka.html" target="_blank">Yuuji Tanaka</a>  ) , <br>
+ (with <a href="https://sites.google.com/view/dinofesti/" target="_blank">Dino Festi</a>,  <a href="https://danielplatt.github.io/" target="_blank">Daniel Platt</a>, <a href="https://www.bimsa.cn/details/faculty/161" target="_blank">Shizhuo Zhang</a>), <br>
               <i>  <a href="https://arxiv.org/abs/2503.02937" target="blank">arXiv</a>, <i>Accepted for publication in <b>Mathematische Zeitschrift </b> </i> <br>
                 <a href="javascript: void(0);" onClick="toggle('real-stable')">Abstract</a></li> 
                 <div id="real-stable" style="display:none;"> 
 <P></P>
 
-<FONT  color="dimgrey">Motivated by gauge theory on manifolds with exceptional holonomy, we construct examples of stable bundles on K3 surfaces that are invariant under two involutions: one is holomorphic; and the other is anti-holomorphic. These bundles are obtained via the monad construction, and stability is examined using the Generalised Hoppe Criterion of Jardim-Menet-Prata-Sá Earp, which requires verifying an arithmetic condition for elements in the Picard group of the surfaces. We establish this by using computer aid in two critical steps: first, we construct K3 surfaces with small Picard group-one branched double cover of ℙ<sup>1</sup>×ℙ<sup>1</sup> with Picard rank 2 using a new method which may be of independent interest; and second, we verify the arithmetic condition for carefully chosen elements of the Picard group, which provides a systematic approach for constructing further examples.</FONT>
+<FONT  color="dimgrey">Motivated by gauge theory on manifolds with exceptional holonomy, we construct examples of stable bundles on K3 surfaces that are invariant under two involutions: one is holomorphic and the other is anti-holomorphic. We use our construction to produce examples of G<sub>2</sub> instantons on the Caldararu-Dominic G<sub>2</sub> manifold. We also produce stable bundles that are invariant under the involution defined by antiholomorphic automorphisms via moduli.
 
 <P></P>
     </div> <br><br>
                   
-                <li> Revisting 3-Sasakian and G<sub>2</sub> structures (with <a href="https://www.kcl.ac.uk/people/simon-salamon" target="_blank">Simon Salamon</a>), <i><b> Real and Complex Geometry</b> (2025) Springer
-special edition on the occasion of Paul Gauduchon’s 80th birthday </i> <br>
-              <i>  <a href="https://arxiv.org/abs/2412.19525" target="blank">arXiv</a></i>  <i>  <a href="https://link.springer.com/chapter/10.1007/978-3-031-92297-8_13" target="blank">Journal</a></i>  <br>
+                <li> Revisting 3-Sasakian and G<sub>2</sub> structures (with <a href="https://www.kcl.ac.uk/people/simon-salamon" target="_blank">Simon Salamon</a>), <i><b> Real and Complex Geometry</b>,
+special edition on the occasion of Paul Gauduchon's 80th birthday </i> <br>
+              <i>  <a href="https://arxiv.org/abs/2412.19525" target="blank">arXiv</a></i>  <i>  <a href="https://link.springer.com/chapter/10.1007/978-3-031-92297-8_13" target="blank">Journal</a></i> <br>
                 <a href="javascript: void(0);" onClick="toggle('3-sasakian')">Abstract</a></li> 
                 <div id="3-sasakian" style="display:none;"> 
 <P></P>
 
-<FONT  color="dimgrey">The algebra of exterior differential forms on a regular 3-Sasakian 7-manifold is investigated, with special reference to nearly-parallel G<sub>2</sub> 3-forms. This is applied to the study of 3-forms invariant under cohomogeneity-one actions by SO(4) on the 7-sphere and on Berger's space SO(5)/SO(3).</FONT>
+<FONT  color="dimgrey">The algebra of exterior differential forms on a regular 3-Sasakian 7-manifold is investigated, with special reference to nearly-parallel G<sub>2</sub> 3-forms. This is applied to obtain new information about the homogeneous 3-Sasakian structures N_{k,l} of Aloff and Wallach, and the quaternion Kahler orbifold $\mathbb{HP}^n/C_m$ which underlies each such structure. We construct nearly parallel G<sub>2</sub>-structures on all N_{k,l} and show that these induce 3-Sasakian structures on $\mathbb{HP}^n /C_m$.
 
 <P></P>
     </div> <br><br>
-                  <li> Nearly half-flat SU(3)-structures on S<sup>3</sup>×S<sup>3</sup>, <b>Differential Geometry and Its Applications,Volume 97</b> (2024) <i><a href="https://arxiv.org/abs/2310.11233" target="_blank">arXiv</a> <a href="https://doi.org/10.1016/j.difgeo.2024.102187"> Journal</a></i>
-                <br>
+                  <li> Nearly half-flat SU(3)-structures on S<sup>3</sup>×S<sup>3</sup>, <b>Differential Geometry and Its Applications,Volume 97</b> (2024) <i><a href="https://arxiv.org/abs/2310.11235" target="blank">arXiv</a></i> <i><a href="https://www.sciencedirect.com/science/article/pii/S0926224524000329" target="blank">Journal</a></i><br>
                 <a href="javascript: void(0);" onClick="toggle('nearly-half-flat')">Abstract</a></li>
 
 <div id="nearly-half-flat" style="display:none;"> 
 <P></P>
 
-<FONT  color="dimgrey">We study the SU(3)-structure induced on an oriented hypersurface of a 7-dimensional manifold with a nearly parallel G<sub>2</sub>-structure. We call such SU(3)-structures nearly half-flat. We characterise the left invariant nearly half-flat structures on S<sup>3</sup>×S<sup>3</sup>. This characterisation then help us to systematically analyse nearly parallel G<sub>2</sub>-structures on an interval times S<sup>3</sup>×S<sup>3</sup>.</FONT>
+<FONT  color="dimgrey">We study the SU(3)-structure induced on an oriented hypersurface of a 7-dimensional manifold with a nearly parallel G<sub>2</sub>-structure. We call such SU(3)-structures nearly half-flat, and we classify the space of such structures on S<sup>3</sup> × S<sup>3</sup>. We also study the deformations of nearly half-flat SU(3)-structures and compute their deformation space.
 
 <P></P>
     </div>
                 <br><br>
 
-                <li> Deformation theory of nearly G<sub>2</sub> manifolds (with <a href="https://s-dwivedi.github.io/index.html" target="_blank">Shubham Dwivedi</a>), <b>Communications in Analysis and Geometry, Volume 31, Number 3</b>(2023), <i><a href="https://arxiv.org/abs/2007.02497" target="_blank">arXiv</a> <a href="https://dx.doi.org/10.4310/CAG.2023.v31.n3.a5"> Journal </a></i>
-                <br>
+                <li> Deformation theory of nearly G<sub>2</sub> manifolds (with <a href="https://s-dwivedi.github.io/index.html" target="_blank">Shubham Dwivedi</a>), <b>Communications in Analysis and Geometry,Volume 31</b> (2023), <i><a href="https://arxiv.org/abs/2106.14784" target="blank">arXiv</a></i> <i><a href="https://intlpress.com/site/pub/pages/journals/items/cag/content/vols/0031/0007/a004/index.php" target="blank">Journal</a></i> <br>
                 <a href="javascript: void(0);" onClick="toggle('deformation-G2')">Abstract</a></li>
 
 <div id="deformation-G2" style="display:none;"> 
 <P></P>
 
-<FONT  color="dimgrey">We study the deformation theory of nearly G<sub>2</sub> manifolds. These are seven dimensional manifolds admitting real Killing spinors. We show that the infinitesimal deformations of nearly G<sub>2</sub> structures are obstructed in general. Explicitly, we prove that the infinitesimal deformations of the homogeneous nearly G<sub>2</sub> structure on the Aloff—Wallach space are all obstructed to second order. We also completely describe the cohomology of nearly G<sub>2</sub> manifolds.</FONT>
+<FONT  color="dimgrey">We study the deformation theory of nearly G<sub>2</sub> manifolds. These are seven dimensional manifolds admitting real Killing spinors. We show that the infinitesimal deformations of nearly G<sub>2</sub> manifolds are unobstructed, and compute the dimension of the deformation space. We also show that the deformations of a compact nearly G<sub>2</sub> manifold correspond to the kernel of a twisted spin-Dirac operator.
 
 <P></P>
 
 </div>
                 <br><br>
-          <li>Deformations of G<sub>2</sub> instantons on nearly G<sub>2</sub> manifolds, <b>Annals of Global Analysis and Geometry, Volume 62</b> (2022),<i> <a href="https://arxiv.org/abs/2101.02151" target="_blank">arXiv</a> <a href="https://link.springer.com/article/10.1007/s10455-022-09853-1">Journal </a></i>
+          <li>Deformations of G<sub>2</sub> instantons on nearly G<sub>2</sub> manifolds, <b>Annals of Global Analysis and Geometry, Volume 62</b> (2022),<i> <a href="https://arxiv.org/abs/2101.02151" target="blank">arXiv</a></i> <i><a href="https://link.springer.com/article/10.1007/s10455-022-09861-1" target="blank">Journal</a></i><br>
               <br>
                 <a href="javascript: void(0);" onClick="toggle('deformation-instantons')">Abstract</a></li>
 
 <div id="deformation-instantons" style="display:none;"> 
 <P></P>
 
-<FONT color="dimgrey">We study the deformation theory of G<sub>2</sub>-instantons on nearly G<sub>2</sub> manifolds. There is a one-to-one correspondence between nearly parallel G<sub>2</sub> structures and real Killing spinors, thus the deformation theory can be formulated in terms of spinors and Dirac operators. We prove that the space of infinitesimal deformations of an instanton is isomorphic to the kernel of an elliptic operator. Using this formulation we prove that abelian instantons are rigid. Then we apply our results to describe the deformation space of the canonical connection on the four normal homogeneous nearly G<sub>2</sub> manifolds.</FONT>
+<FONT color="dimgrey">We study the deformation theory of G<sub>2</sub>-instantons on nearly G<sub>2</sub> manifolds. There is a one-to-one correspondence between nearly parallel G<sub>2</sub> structures and the isometry classes of homogeneous nearly G<sub>2</sub> manifolds. For each isometry class, we compute the dimension of the deformation space of G<sub>2</sub>-instantons and also describe these deformation spaces. We show that the infinitesimal deformations of G<sub>2</sub>-instantons are unobstructed and are in one-to-one correspondence to the kernel of a twisted spin-Dirac operator.
 
 <P></P>
 
@@ -240,7 +241,7 @@ special edition on the occasion of Paul Gauduchon’s 80th birthday </i> <br>
       <p style="font-size: 18px; color: darkslategray">Thesis</p>
          <p align="justify">
             <ul>
-                <li>Deformation theory of nearly G<sub>2</sub>-structures and nearly G<sub>2</sub> instantons, <b>PhD thesis, University of Waterloo</b> (2021) <i><a href="http://hdl.handle.net/10012/17318", target="_blank">Available Online</a></i></li>
+                <li>Deformation theory of nearly G<sub>2</sub>-structures and nearly G<sub>2</sub> instantons, <b>PhD thesis, University of Waterloo</b> (2021) <i><a href="http://hdl.handle.net/10012/17231" target="blank">Thesis</a></i>
     </ul>
                     </p>     
 
@@ -252,9 +253,3 @@ special edition on the occasion of Paul Gauduchon’s 80th birthday </i> <br>
 
 </body>
 </html> 
-
-
-
-
-
-
